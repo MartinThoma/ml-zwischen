@@ -1,0 +1,28 @@
+%!TEX root = Zwischen-ML-Prak-2015.tex
+\section{Worum es geht}
+
+\subsection{Die Aufgabe}
+
+\begin{frame}{Die Aufgabe}
+    \begin{itemize}
+        \item \textbf{Eingabe}: Bilder, die von einer Kamera aus Fahrersicht
+              aufgenommen wurden
+        \item \textbf{Ausgabe}: Ein Bild gleicher Größe, wo jedes Pixel
+              entweder schwarz ist (wenn der Klassifikator denkt es ist Straße)
+              oder weiß ist (wenn dem) nicht so ist.
+    \end{itemize}
+
+    TODO: Bild + Ausgabe des Netzes + Perfektes Overlay einfügen
+\end{frame}
+
+\begin{frame}{Die Daten}
+    \href{http://www.cvlibs.net/datasets/kitti/eval_road.php}{KITTI Road Estimation dataset}
+    \begin{itemize}
+        \item Daten-Bilder der Größe $[1226, \dots, 1242] \times [370, \dots, 376]$,
+              8-bit/color RGB, non-interlaced
+        \item Label-Bilder der selben Größe; 8-bit/color RGB, non-interlaced;
+              3 Farben (TODO: Warum 3?)
+        \item 289 Trainingsdatensätze
+        \item 290 Test-Datensätze
+    \end{itemize}
+\end{frame}
