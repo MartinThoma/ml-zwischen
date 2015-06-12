@@ -124,3 +124,8 @@ sympy-plots-for-*.tex/
 # WinEdt
 *.bak
 *.sav
+
+LaTeX/logos/kitlogo_de_rgb.eps
+LaTeX/logos/kitlogo_en_rgb.eps
+logos/kitlogo_de_rgb.eps
+logos/kitlogo_en_rgb.eps
