@@ -11,18 +11,19 @@
               entweder schwarz ist (wenn der Klassifikator denkt es ist Straße)
               oder weiß ist (wenn dem) nicht so ist.
     \end{itemize}
-
-    TODO: Bild + Ausgabe des Netzes + Perfektes Overlay einfügen
 \end{frame}
 
 \begin{frame}{Die Daten}
     \href{http://www.cvlibs.net/datasets/kitti/eval_road.php}{KITTI Road Estimation dataset}
     \begin{itemize}
         \item Daten-Bilder der Größe $[1226, \dots, 1242] \times [370, \dots, 376]$,
-              8-bit/color RGB, non-interlaced
-        \item Label-Bilder der selben Größe; 8-bit/color RGB, non-interlaced;
-              3 Farben (TODO: Warum 3?)
-        \item 289 Trainingsdatensätze
-        \item 290 Test-Datensätze
+              8-bit RGB
+        \item Label-Bilder der selben Größe; 8-bit RGB mit 2 Farben
+        \item 289 Trainingsbilder
+        \item 290 Testbilder
     \end{itemize}
 \end{frame}
+
+\framedgraphic{Daten}{../images/umm_000000.png}
+\framedgraphic{Labels}{../images/umm_road_000000.png}
+\framedgraphic{Overlay}{../images/um_000000-overlay.png}
