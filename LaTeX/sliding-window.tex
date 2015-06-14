@@ -4,19 +4,29 @@
 \subsection{Sliding Window}
 
 \begin{frame}{Sliding Window}
-    \begin{itemize}
-        \item mit Lasagne 
-        \item lokales implementieren
-        \item lange Laufzeit 
+  \includegraphics[scale=0.11]{../Images/Lasagne/padded.jpg}
+  \hspace{0.1cm}
+      \includegraphics[scale=0.12]{../Images/Lasagne/29x29-color-coordinates.jpg}
+         \vspace{0.1cm}
+    \includegraphics[scale=0.2]{../Images/Lasagne/29x29-color-coordinates-overlay.jpg}
+         \begin{itemize}
+       \item Implementierung mit Lasagne, Windowsize 50 Pixel
+        \item Pixelkoordinate als zus\"atzliches Feature
     \end{itemize}
+  \rightarrow \emph{schlechte Ergebnisse}, \emph{lange Laufzeit}
+    
 \end{frame}
 
-
+\section{Ausblick}
 \subsection{Ausblick}
 \begin{frame}{Ausblick}
     \begin{itemize}
-       \item warten noch auf Antwort 
-        \item mit Lasagne Ansatz von Lon Jong implementieren
-        \item flexiblere Anpassung
+      \item Siliding Window Ansatz nicht weiterverfolgen
+       \item in Kontakt mit Jonathan Long, bzgl. Caffe Implementierung
+        \item Fully Concolutional Networks mit Lasagne implementieren
+      
     \end{itemize}
-\end{frame}
+    Davon erhoffen wir uns:
+    \newline
+    \rightarrow \emph{flexible Anpassung},  \emph{schnellere Laufzeit} und  \emph{gute Resultate}
+\end{frame} 
