@@ -3,15 +3,38 @@
 
 \subsection{Caffe}
 
-\begin{frame}{Caffe}
-    \begin{itemize}
-        \item deploy.prototxt und train\_eval.prototxt
-        \begin{itemize}
-            \item weight\_filler und bias\_filler
-            \item \href{https://github.com/BVLC/caffe/issues/2545}{github.com/BVLC/caffe/issues/2545}
-                  und \href{https://github.com/BVLC/caffe/issues/2546}{2546}
-        \end{itemize}
-        \item Komische Fehler (TODO: ein paar einbinden)
-        \item Bilder von Netzen und Ergebnisse
-    \end{itemize}
+\begin{frame}{Erste Ergebnisse}
+
+\centering
+
+\includegraphics[width=0.75\textwidth]{../images/umm_000000.png}
+
+\hspace{0.5cm}
+
+\only<1>{
+\includegraphics[width=0.75\textwidth]{../images/um-segmentation.png}
+}
+
+\only<2>{
+\includegraphics[width=0.75\textwidth]{../images/um-overlay.png}
+}
+
+ %TODO: Komische Fehler (TODO: ein paar einbinden)
+
+\end{frame}
+
+\begin{frame}{Challenges}
+
+\centering
+
+\begin{itemize}
+ \item Reduziere Netzgröße (von 11.5 GiB) \\
+ \includegraphics[width=0.9\textwidth]{../images/mid.png}
+ \item trainiere mit Eigenen Daten \\
+ \begin{minipage}{0.45\textwidth}
+ \includegraphics[width=\textwidth]{../images/out.png}
+ \end{minipage}  \begin{minipage}{0.45\textwidth}
+ \includegraphics[width=\textwidth]{../images/out-um.png}  
+ \end{minipage}
+\end{itemize}
 \end{frame}
